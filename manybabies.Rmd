@@ -248,7 +248,7 @@ all_agg_subjects_paired <- all_agg_subjects %>%
 ## Overall Preference for IDS v ADS
 
 ```{r}
-ggplot(agg_subjects, aes(x=Condition, y=MeanLogLT, group=Subject)) +
+ggplot(agg_subjects, aes(x=Condition, y=MeanLogLT)) +
   geom_boxplot() +
   geom_jitter(width = .25, size =.5) +
   theme_manylabs
